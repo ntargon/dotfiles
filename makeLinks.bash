@@ -5,6 +5,6 @@
 
 
 for file in `find -maxdepth 1 -mindepth 1 -name ".*" -not -name ".git" -not -name ".gitignore"` ; do
-   ln -sf $HOME/dotfiles/${file:2} $HOME/${file:2}
+   ln -sfnv $HOME/dotfiles/${file:2} $HOME/${file:2}
 done
 
