@@ -5,6 +5,7 @@ repo = 'Shougo/dein.vim'
 repo = 'scrooloose/nerdtree'
 hook_add = '''
    let g:NERDTreeShowHidden = 1
+   map <C-n> <plug>NERDTreeTabsToggle<CR>
    "au MyAutoCmd VimEnter * execute 'NERDTreeTabsToggle'
 '''
 
@@ -40,3 +41,7 @@ build = 'make'
 
 [[plugins]]
 repo = 'Shougo/vimshell'
+
+
+
+

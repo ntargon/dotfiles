@@ -25,7 +25,12 @@ set hidden
 set showcmd
 " クリップボード有効化
 set clipboard=unnamedplus,autoselect
-  
+
+" QuickRun for tex texファイルのときのみ読み込むように改良する
+nnoremap <silent><F5> :QuickRun<CR>
+nnoremap <silent><F6> :QuickRun -type tmptex<CR>
+vnoremap <silent><F6> :QuickRun -mode v -type tmptex<CR>
+
 
 " 見た目系
 " 行番号を表示
@@ -49,6 +54,10 @@ set wildmode=list:longest
 " 折り返し時に表示行単位での移動できるようにする
 nnoremap j gj
 nnoremap k gk
+"カーソルの相対位置を保持してスクリーンを一行スクロール
+nnoremap <C-j> gj<C-e>
+nnoremap <C-k> gk<C-y> 
+
 
 
 " Tab系
@@ -139,7 +148,7 @@ inoremap jj <ESC>
 "set foldmethod=indent
 
 "Nerd tree
-map <C-n> <plug>NERDTreeTabsToggle<CR>
+"map <C-n> <plug>NERDTreeTabsToggle<CR>
 
 "-----------------------------------------------
 "dein
