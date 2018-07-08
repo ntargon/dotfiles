@@ -4,7 +4,7 @@
 #./makeLinks.bash or bash makeLinks.bash
 
 
-for file in `find -maxdepth 1 -mindepth 1 -name ".*" -not -name ".git"` ; do
+for file in `find -maxdepth 1 -mindepth 1 -name ".*" -not -name ".git" -not -name ".gitignore"` ; do
    ln -sf $HOME/dotfiles/${file:2} $HOME/${file:2}
 done
 
