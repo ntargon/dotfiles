@@ -140,6 +140,6 @@ export MAKEFLAGS=-j$(eval nproc)
 source /usr/local/root/bin/thisroot.sh
 
 #texlive
-export PATH="/usr/local/texlive/2018/texmf-dist/doc/man:$PATH"
-export PATH="/usr/local/texlive/2018/texmf-dist/doc/info:$PATH"
+export MANPATH="/usr/local/texlive/2018/texmf-dist/doc/man:$MANPATH"
+export INFOPATH="/usr/local/texlive/2018/texmf-dist/doc/info:$INFOPATH"
 export PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
