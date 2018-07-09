@@ -27,9 +27,9 @@ set showcmd
 set clipboard=unnamedplus,autoselect
 
 " QuickRun for tex texファイルのときのみ読み込むように改良する
-nnoremap <silent><F5> :QuickRun<CR>
-nnoremap <silent><F6> :QuickRun -type tmptex<CR>
-vnoremap <silent><F6> :QuickRun -mode v -type tmptex<CR>
+autocmd FileType tex nnoremap <silent><F5> :QuickRun<CR>
+autocmd FileType tex nnoremap <silent><F6> :QuickRun -type tmptex<CR>
+autocmd FileType tex vnoremap <silent><F6> :QuickRun -mode v -type tmptex<CR>
 
 
 " 見た目系
