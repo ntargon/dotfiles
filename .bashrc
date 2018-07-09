@@ -124,6 +124,8 @@ GIT_PS1_SHOWDIRTYSTATE=true
 PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 
 #PATH
+export HIMAC="$HOME/workspaces/himac_analysis/file_tokunaga"
+export PATH="$HOME/workspaces/himac_analysis/file_tokunaga/py:$PATH"
 
 #alias
 alias c='xsel -bi'
