@@ -8,6 +8,7 @@ for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
     imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
 
 "setting
+set fileformats=unix,dos,mac
 "文字コードをUFT-8に設定
 "set fenc=utf-8
 set encoding=utf-8
@@ -28,7 +29,7 @@ set clipboard=unnamedplus,autoselect
 
 " QuickRun for tex texファイルのときのみ読み込むように改良する
 autocmd FileType tex nnoremap <silent><F5> :QuickRun<CR>
-autocmd FileType tex nnoremap <silent><F6> :QuickRun -type tmptex<CR>
+autocmd FileType plaintex nnoremap <silent><F5> :QuickRun -type tmptex<CR>
 autocmd FileType tex vnoremap <silent><F6> :QuickRun -mode v -type tmptex<CR>
 
 
