@@ -1,0 +1,8 @@
+import os
+import psutil
+
+buf = psutil.Process(os.getppid()).name()
+if buf.find('Atom Helper') == 0:
+    $PATH.append('/usr/local/bin')
+
+xontrib load powerline
