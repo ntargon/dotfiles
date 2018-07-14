@@ -30,7 +30,7 @@ $XONSH_SHOW_TRACEBACK = True
 # サブプロセスタイムアウトのメッセージ抑制
 $SUPPRESS_BRANCH_TIMEOUT_MESSAGE = True
 # キー入力即評価（サイコー）
-$UPDATE_COMPLETIONS_ON_KEYPRESS = True
+$UPDATE_COMPLETIONS_ON_KEYPRESS = False
 # プロンプトの表記(変更する)
 $XONSH_GITSTATUS_CHANGED='{RED}*'
 $XONSH_GITSTATUS_STAGED='{RED}+'
@@ -58,6 +58,7 @@ aliases["v"] = "vim"
 aliases["vi"] = "vim"
 aliases["vx"] = "vim ~/.xonshrc"
 aliases["vv"] = "vim ~/.vimrc"
+aliases["c"] = "xsel -bi"
 
 
 
