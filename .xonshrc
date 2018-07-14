@@ -59,6 +59,7 @@ aliases["vi"] = "vim"
 aliases["vx"] = "vim ~/.xonshrc"
 aliases["vv"] = "vim ~/.vimrc"
 aliases["c"] = "xsel -bi"
+aliases["jn"] = "jupyter notebook"
 
 
 

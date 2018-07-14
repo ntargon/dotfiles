@@ -126,6 +126,9 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[31m\]$(__gi
 #PATH
 export HIMAC="$HOME/workspaces/himac_analysis/file_tokunaga"
 export PATH="$HOME/workspaces/himac_analysis/file_tokunaga/py:$PATH"
+export PATH="/opt/intel/bin:$PATH"
+export OMP_NUM_THREADS=$(eval nproc)
+
 
 #alias
 alias c='xsel -bi'
