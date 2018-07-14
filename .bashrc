@@ -127,7 +127,9 @@ export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[31m\]$(__gi
 export HIMAC="$HOME/workspaces/himac_analysis/file_tokunaga"
 export PATH="$HOME/workspaces/himac_analysis/file_tokunaga/py:$PATH"
 export PATH="/opt/intel/bin:$PATH"
-export OMP_NUM_THREADS=$(eval nproc)
+export PATH="/opt/phits/bin:$PATH"
+export OMP_NUM_THREADS=$(eval cat /proc/cpuinfo | grep "cpu cores" | uniq | awk '{print $4}')
+source /opt/intel/bin/ifortvars.sh
 
 
 #alias
