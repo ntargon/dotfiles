@@ -7,3 +7,5 @@ cd $HOME
 git clone https://github.com/ntargon/dotfiles.git
 bash dotfiles/makeLinks.bash
 ```
+
+## yayyayyay!
