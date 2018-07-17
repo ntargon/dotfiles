@@ -117,3 +117,6 @@ hook_source = '''
 
 '''
 
+[[plugins]]
+repo = 'kannokanno/previm'
+on_ft = ['markdown']

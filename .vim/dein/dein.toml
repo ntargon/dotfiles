@@ -43,5 +43,7 @@ build = 'make'
 repo = 'Shougo/vimshell'
 
 
+[[plugins]]
+repo = 'tyru/open-browser.vim'
 
 
