@@ -130,6 +130,7 @@ export PATH="/opt/intel/bin:$PATH"
 export PATH="/opt/phits/bin:$PATH"
 export OMP_NUM_THREADS=$(eval cat /proc/cpuinfo | grep "cpu cores" | uniq | awk '{print $4}')
 source /opt/intel/bin/ifortvars.sh
+export PATH="$HOME/shell_scripts:$PATH"
 
 
 #alias

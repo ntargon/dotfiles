@@ -60,9 +60,10 @@ aliases["vx"] = "vim ~/.xonshrc"
 aliases["vv"] = "vim ~/.vimrc"
 aliases["c"] = "xsel -bi"
 aliases["jn"] = "jupyter notebook"
-aliases["tarc"] = "tar -zcvf"
+#aliases["tarc"] = "tar -zcvf"
 aliases["tarx"] = "tar -zxvf"
 aliases["chrome"] = "google-chrome"
+aliases["tarc"] = "_tarc.sh"
 
 
 
