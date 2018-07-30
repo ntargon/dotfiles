@@ -20,7 +20,8 @@ $INDENT = "    "
 # 補完時に大小区別しない
 $CASE_SENSITIVE_COMPLETIONS = False
 # 連続重複コマンドを保存しない
-$HISTCONTROL = "ignoredups"
+$HISTCONTROL = {'ignoredups', 'ignoreerr'}
+#$HISTCONTROL = "ignoredups"{'ignoredups', 'ignoreerr'}
 # 括弧を補完
 $XONSH_AUTOPAIR = True
 # ディレクトリ名を入力でcd
