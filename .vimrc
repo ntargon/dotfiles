@@ -27,8 +27,8 @@ set showcmd
 " クリップボード有効化
 set clipboard=unnamedplus,autoselect
 
-" QuickRun for tex texファイルのときのみ読み込むように改良する
-
+" for phits
+autocmd BufRead,BufNewFile *.inp setfiletype phits
 
 " 見た目系
 " 行番号を表示
