@@ -27,8 +27,6 @@ set showcmd
 " クリップボード有効化
 set clipboard=unnamedplus,autoselect
 
-" for phits
-autocmd BufRead,BufNewFile *.inp setfiletype phits
 
 " 見た目系
 " 行番号を表示
@@ -159,6 +157,12 @@ endif
 " reset augroup
 augroup MyAutoCmd
   autocmd!
+  
+  " for phits
+  autocmd BufRead,BufNewFile *.inp setfiletype phits
+  
+  " for tex
+  autocmd BufRead,BufNewFile *.tex setfiletype tex
 augroup END
 
 
