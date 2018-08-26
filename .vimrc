@@ -65,9 +65,9 @@ nnoremap <C-k> gk<C-y>
 " Tab文字を半角スペースにする
 set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
-set tabstop=3
+set tabstop=2
 " 行頭でのTab文字の表示幅
-set shiftwidth=3
+set shiftwidth=2
 "ファイル全体から見たカーソルの位置表示
 "set ryker
 "シンタックスハイライト
