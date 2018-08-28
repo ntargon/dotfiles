@@ -47,3 +47,6 @@ repo = 'Shougo/vimshell'
 repo = 'tyru/open-browser.vim'
 
 
+[[plugins]]
+repo = 'tpope/vim-commentary'
+
