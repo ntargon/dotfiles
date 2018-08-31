@@ -50,3 +50,8 @@ repo = 'tyru/open-browser.vim'
 [[plugins]]
 repo = 'tpope/vim-commentary'
 
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
