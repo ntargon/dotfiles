@@ -146,6 +146,9 @@ inoremap jj <ESC>
 "Nerd tree
 "map <C-n> <plug>NERDTreeTabsToggle<CR>
 
+"vim-commentary用
+autocmd FileType phits setlocal commentstring=#\ %s
+
 "-----------------------------------------------
 "dein
 "-----------------------------------------------
