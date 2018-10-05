@@ -152,4 +152,15 @@ export MANPATH="/usr/local/texlive/2018/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2018/texmf-dist/doc/info:$INFOPATH"
 export PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
 
+
+#表示
+cat << EOF
+ _       ____  _____  _______ _____    __  ______  ___   
+| |     / / / / /   |/_  __( ) ___/   / / / / __ \/__ \    
+| | /| / / /_/ / /| | / /  |/\__ \   / / / / /_/ / / _/  
+| |/ |/ / __  / ___ |/ /    ___/ /  / /_/ / ____/ /_/    
+|__/|__/_/ /_/_/  |_/_/    /____/   \____/_/     (_)     
+                                                         
+EOF
+
 xonsh
