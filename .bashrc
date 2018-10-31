@@ -152,6 +152,9 @@ export MANPATH="/usr/local/texlive/2018/texmf-dist/doc/man:$MANPATH"
 export INFOPATH="/usr/local/texlive/2018/texmf-dist/doc/info:$INFOPATH"
 export PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
 
+#jupyter notebook
+export JUPYTER_PATH="$JUPYTER_PATH:$HOME/.jupyter"
+
 
 #表示
 cat << EOF
