@@ -2,8 +2,10 @@
   "load_extensions": {
     "nbextensions_configurator/config_menu/main": true,
     "contrib_nbextensions_help_item/main": true,
-    "toc2/main": false,
+    "toc2/main": true,
     "snippets/main": true,
-    "codefolding/main": false
+    "codefolding/main": false,
+    "hinterland/hinterland": true,
+    "hide_input/main": true
   }
 }
