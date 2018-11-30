@@ -155,6 +155,8 @@ export PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
 #jupyter notebook
 export JUPYTER_PATH="$JUPYTER_PATH:$HOME/.jupyter"
 
+#geant4
+source /opt/geant4/bin/geant4.sh
 
 #表示
 cat << EOF
