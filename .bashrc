@@ -155,6 +155,11 @@ export PATH="/usr/local/texlive/2018/bin/x86_64-linux:$PATH"
 #jupyter notebook
 export JUPYTER_PATH="$JUPYTER_PATH:$HOME/.jupyter"
 
+#QT
+export QT_PATH=/opt/Qt5.11.2
+export PATH=$PATH:$QT_PATH/5.11.2/gcc_64/bin
+export LD_LIBRARY_PATH=$QT_PATH/5.11.2/gcc_64/lib
+
 #geant4
 source /opt/geant4/bin/geant4.sh
 
