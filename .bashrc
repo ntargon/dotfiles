@@ -163,6 +163,9 @@ export LD_LIBRARY_PATH=$QT_PATH/5.11.2/gcc_64/lib
 #geant4
 source /opt/geant4/bin/geant4.sh
 
+#pythonpath
+export PYTHONPATH=$PYTHONPATH:"$HOME/workspaces/GradThesis/python_module"
+
 #表示
 cat << EOF
  _       ____  _____  _______ _____    __  ______  ___   
