@@ -15,6 +15,7 @@
             "code" : [
                 "import matplotlib.pyplot as plt",
                 "import numpy as np",
+                "from matplotlib.backends.backend_pdf import PdfPages",
                 " ",
                 "fig, ax = plt.subplots(1, 1, figsize=(8,6))",
                 "ax.plot(x, y, label='label')",
@@ -38,6 +39,9 @@
                 "#plt.grid(True)",
                 " ",
                 "plt.rcParams['font.size'] = 12 #fontsize",
+                "pp = PdfPages('path_to_file')",
+                "pp.savefig(fig)",
+                "pp.close()",
                 " "
 
             ]
