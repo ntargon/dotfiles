@@ -8,10 +8,10 @@
 "     imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
 
 "括弧補完
-inoremap { {}<Left>
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<ESC>i
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
+" inoremap { {}<Left>
+" inoremap {<Enter> {}<Left><CR><ESC><S-o>
+" inoremap ( ()<ESC>i
+" inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
 "setting
 set fileformats=unix,dos,mac
