@@ -1,11 +1,17 @@
 "自動補完
-highlight Normal ctermbg=none
-set completeopt=menuone
-for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
-    exec "imap " . k . " " . k . "<C-N><C-P>"
-    endfor
+" highlight Normal ctermbg=none
+" set completeopt=menuone
+" for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
+"     exec "imap " . k . " " . k . "<C-N><C-P>"
+"     endfor
 
-    imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
+"     imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
+
+"括弧補完
+" inoremap { {}<Left>
+" inoremap {<Enter> {}<Left><CR><ESC><S-o>
+" inoremap ( ()<ESC>i
+" inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
 "setting
 set fileformats=unix,dos,mac
