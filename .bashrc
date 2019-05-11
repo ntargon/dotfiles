@@ -145,7 +145,7 @@ eval "$(pyenv virtualenv-init -)"
 export MAKEFLAGS=-j$(eval nproc)
 
 #ROOT
-source /usr/local/root/bin/thisroot.sh
+source /opt/root/bin/thisroot.sh
 
 #texlive
 export MANPATH="/usr/local/texlive/2018/texmf-dist/doc/man:$MANPATH"
@@ -158,7 +158,7 @@ export JUPYTER_PATH="$JUPYTER_PATH:$HOME/.jupyter"
 #QT
 export QT_PATH=/opt/Qt5.11.2
 export PATH=$PATH:$QT_PATH/5.11.2/gcc_64/bin
-export LD_LIBRARY_PATH=$QT_PATH/5.11.2/gcc_64/lib
+export LD_LIBRARY_PATH=$QT_PATH/5.11.2/gcc_64/lib:$LD_LIBRARY_PATH
 
 #geant4
 source /opt/geant4/bin/geant4.sh
