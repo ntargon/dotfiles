@@ -7,7 +7,7 @@
     "codefolding/main": false,
     "hinterland/hinterland": true,
     "hide_input/main": true,
-    "code_prettify/autopep8": true,
+    "code_prettify/autopep8": false,
     "collapsible_headings/main": true
   }
 }
