@@ -168,6 +168,9 @@ source /opt/geant4/bin/geant4.sh
 #pythonpath
 export PYTHONPATH=$PYTHONPATH:"$HOME/workspaces/GradThesis/python_module"
 
+export PATH="/usr/local/cuda/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
+
 #表示
 cat << EOF
  _       ____  _____  _______ _____    __  ______  ___   
