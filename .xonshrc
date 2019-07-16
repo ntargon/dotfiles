@@ -114,3 +114,6 @@ lazy_module_dict = {
 for k,v in lazy_module_dict.items():
     t = "@lazyobject\ndef {}():\n    return importlib.import_module('{}')".format(k, v)
     exec(t)
+
+
+tmux

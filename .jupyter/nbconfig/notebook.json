@@ -8,6 +8,7 @@
     "hinterland/hinterland": true,
     "hide_input/main": true,
     "code_prettify/autopep8": false,
-    "collapsible_headings/main": true
+    "collapsible_headings/main": true,
+    "vim_binding/vim_binding": false
   }
 }

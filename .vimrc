@@ -13,6 +13,9 @@
 " inoremap ( ()<ESC>i
 " inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
+"fgで常にtabで開くようにする
+nnoremap gf <C-w>gf
+
 "setting
 set fileformats=unix,dos,mac
 "文字コードをUFT-8に設定
