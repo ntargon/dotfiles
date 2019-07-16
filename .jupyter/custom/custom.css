@@ -1,0 +1,16 @@
+.container {
+    width: 99% !important;
+}
+
+/* @font-face { */
+/*   font-family: "Hasklig"; */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/*   src: local('"Hasklig"'), url('fonts/Hasklig-Regular.otf') format('opentype'); */
+/* } */
+
+div.CodeMirror,
+div.output_area {
+  /* font-family: "Hasklig", monospace; */
+  font-size: 10pt;
+}
