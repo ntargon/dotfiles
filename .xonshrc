@@ -1,10 +1,11 @@
-#import psutil
-#
 #buf = psutil.Process(os.getppid()).name()
 #if buf.find('Atom Helper') == 0:
 #    $PATH.append('/usr/local/bin')
 #
 #xontrib load powerline
+
+
+
 
 # エディタ
 $EDITOR = '/usr/local/bin/vim'
@@ -35,7 +36,10 @@ $UPDATE_COMPLETIONS_ON_KEYPRESS = False
 # プロンプトの表記(変更する)
 $XONSH_GITSTATUS_CHANGED='{RED}*'
 $XONSH_GITSTATUS_STAGED='{RED}+'
-$PROMPT = "{BOLD_GREEN}{user}{BOLD_GREEN}@{BOLD_GREEN}{hostname}{BOLD_BLUE}:{cwd} {gitstatus}{WHITE}$ "
+dir = '{cwd}'
+# $PROMPT = "{BOLD_GREEN}{user}{BOLD_GREEN}:$(dir){cwd.split('/')[-1]} {gitstatus}{WHITE}$ "
+# $PROMPT = "{BOLD_GREEN}{user}{BOLD_GREEN}@{BOLD_GREEN}{hostname}{BOLD_BLUE}:{cwd} {gitstatus}{WHITE}$ "
+$PROMPT = "{BOLD_GREEN}{user}:{BOLD_BLUE}{short_cwd} {gitstatus}{WHITE}$ "
 # lsコマンドの結果の見た目
 #$LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30"
 
@@ -66,6 +70,7 @@ aliases["jn"] = "jupyter notebook"
 aliases["tarx"] = "tar -zxvf"
 aliases["chrome"] = "google-chrome"
 aliases["tarc"] = "_tarc.sh"
+aliases["vm"] = "vim ~/.vmemo"
 
 
 
