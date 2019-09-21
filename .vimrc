@@ -1,11 +1,11 @@
 "自動補完
-" highlight Normal ctermbg=none
-" set completeopt=menuone
-" for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
-"     exec "imap " . k . " " . k . "<C-N><C-P>"
-"     endfor
+highlight Normal ctermbg=none
+set completeopt=menuone
+for k in split("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_",'\zs')
+    exec "imap " . k . " " . k . "<C-N><C-P>"
+    endfor
 
-"     imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
+    imap <expr> <TAB> pumvisible() ? "\<Down>" : "\<Tab>"
 
 "括弧補完
 " inoremap { {}<Left>
@@ -15,6 +15,9 @@
 
 "fgで常にtabで開くようにする
 nnoremap gf <C-w>gf
+
+" No new line at end of file
+set binary noeol
 
 "setting
 set fileformats=unix,dos,mac
@@ -62,6 +65,7 @@ nnoremap k gk
 "カーソルの相対位置を保持してスクリーンを一行スクロール
 nnoremap <C-j> gj<C-e>
 nnoremap <C-k> gk<C-y> 
+
 
 
 
