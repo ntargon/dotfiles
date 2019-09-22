@@ -114,6 +114,7 @@ noremap <Right> <Nop>
 "highlight Normal ctermbg=none
 "
 nnoremap v <c-v>
+nnoremap <c-v> <Nop>
 
 "ノーマルモードで 
 nnoremap ; :
