@@ -71,6 +71,7 @@ aliases["tarx"] = "tar -zxvf"
 aliases["chrome"] = "google-chrome"
 aliases["tarc"] = "_tarc.sh"
 aliases["vm"] = "vim ~/.vmemo"
+aliases["vh"] = "python -i ~/workspaces/pyplot_test/test_data/viewer_himac.py"
 
 
 
