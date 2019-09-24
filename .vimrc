@@ -13,8 +13,15 @@
 " inoremap ( ()<ESC>i
 " inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
+" lexima
+inoremap<C-l> <C-r>=lexima#insmode#leave(1,'<LT>C-G>U<LT>RIGHT>')<CR>
+
+
 "fgで常にtabで開くようにする
 nnoremap gf <C-w>gf
+
+" No new line at end of file
+set binary noeol
 
 "setting
 set fileformats=unix,dos,mac
@@ -65,6 +72,7 @@ nnoremap <C-k> gk<C-y>
 
 
 
+
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
 
@@ -108,6 +116,9 @@ noremap <Right> <Nop>
 "inoremap <Left> <Nop>
 "inoremap <Right> <Nop>
 "highlight Normal ctermbg=none
+"
+nnoremap v <c-v>
+nnoremap <c-v> <Nop>
 
 "ノーマルモードで 
 nnoremap ; :

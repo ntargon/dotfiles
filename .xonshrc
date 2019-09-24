@@ -53,7 +53,7 @@ $PROMPT = "{BOLD_GREEN}{user}:{BOLD_BLUE}{short_cwd} {gitstatus}{WHITE}$ "
 #    aliases['f'] = 'free -h'
 #    aliases['wf'] = 'watch free -h'
 #    aliases['tm'] = 'tmux'
-aliases['ls'] = "ls --color=auto"
+# aliases['ls'] = "ls --color=auto"
 aliases["l"] = "ls -l"
 aliases["lf"] = "ls -f"
 aliases["ld"] = "ls -d"
