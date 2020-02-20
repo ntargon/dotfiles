@@ -121,4 +121,3 @@ for k,v in lazy_module_dict.items():
     exec(t)
 
 
-tmux

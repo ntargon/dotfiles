@@ -174,6 +174,9 @@ export LD_LIBRARY_PATH="/usr/local/cuda/lib64:$LD_LIBRARY_PATH"
 
 export LC_ALL=en_US.UTF-8
 
+#npm
+export PATH=$PATH:`npm bin -g`
+
 #表示
 cat << EOF
  _       ____  _____  _______ _____    __  ______  ___   
